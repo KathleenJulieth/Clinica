@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Cambiamos la fuente a Poppins */
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0; /* Sin margen por defecto */
+    display: flex; /* Flexbox para el layout */
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex; /* Flexbox para el sidebar y el contenido principal */
+    min-height: 100vh; /* Altura mínima para el dashboard */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Toma el espacio restante */
+    padding: 20px; /* Espaciado */
+    background-color: #f4f4f4; /* Color de fondo claro */
+}
+
+/* Title Bar */
+.titleBar {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado */
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50; /* Color de fondo */
+    padding: 10px; /* Espaciado */
+    color: #ecf0f1; /* Color del texto */
+}
+
+.navbar a {
+    color: #ecf0f1; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin-right: 10px; /* Espaciado entre enlaces */
+}
+
+/* Content */
+.content {
+    padding: 20px; /* Espaciado */
+}
+
+/* Article Wrapper */
+.articleWrapper {
+    display: flex; /* Flexbox para disposición */
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+/* Article Text */
+.articleText {
+    flex: 1; /* Tomar espacio disponible */
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado inferior */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Buttons */
+.btn {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor */
+    transition: background 0.3s; /* Transición para hover */
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Color al pasar el ratón */
+}
+
+/* Navigation Buttons */
+.navButtons {
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.navButtons button {
+    background-color: #2ecc71; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor */
+    margin-right: 10px; /* Espaciado entre botones */
+}
+
+.navButtons button:hover {
+    background-color: #27ae60; /* Color al pasar el ratón */
+}
+

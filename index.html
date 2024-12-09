@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Consultorio Médico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Consultorio</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Dashboard</a></li>
+                    <li><a href="paciente.php">Pacientes</a></li>
+                    <li><a href="secretario.php">Médicos</a></li>
+                    <li><a href="#">Configuración</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1>Agendamiento de Citas</h1>
+                <div class="user-profile">
+                    <span>Bienvenido, Doctor</span>
+                    <img src="https://via.placeholder.com/40" alt="User Profile">
+                </div>
+            </header>
+
+            <!-- Content -->
+            <section class="content">
+                <!-- Statistics -->
+                <div class="stats">
+                    <div class="stat-card">
+                        <h3>20</h3>
+                        <p>Citas de Hoy</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>5</h3>
+                        <p>Citas Pendientes</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>15</h3>
+                        <p>Citas Completadas</p>
+                    </div>
+                </div>
+
+                <!-- Appointments Table -->
+                <div class="appointments">
+                    <h2>Citas Programadas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Paciente</th>
+                                <th>Hora</th>
+                                <th>Médico</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>10:00 AM</td>
+                                <td>Dr. Gómez</td>
+                                <td><span class="status pending">Pendiente</span></td>
+                                <td><button class="action-btn">Ver</button></td>
+                            </tr>
+                            <tr>
+                                <td>María López</td>
+                                <td>11:30 AM</td>
+                                <td>Dr. Ramírez</td>
+                                <td><span class="status completed">Completada</span></td>
+                                <td><button class="action-btn">Ver</button></td>
+                            </tr>
+                            <tr>
+                                <td>Pedro García</td>
+                                <td>02:00 PM</td>
+                                <td>Dr. Fernández</td>
+                                <td><span class="status canceled">Cancelada</span></td>
+                                <td><button class="action-btn">Ver</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
